@@ -28,7 +28,7 @@ function App() {
 		setTodos([...todos, newTodo]);
 	};
 	const removeTodo = (id) => {
-		
+		setTodos(todos.filter(todo => todo.id !== id));
 	};
 
 	return (
